@@ -2,6 +2,7 @@ Software testing ---> to ensure quality of developed software ---> find bugs and
 Why testing? ----> provides quality assurance, removes errors at the initial stages, ensures lower maintainance cost and accuracy and consistency, BUG Free, multiple OS support.
 categories of software testing ---> MANUAL TESTING, AUTOMATION TESTING.
 quality control? ---> product-oriented approach to ensure successfull execution without defects and with requirements as per client.
+
 types of manual testing ---> Blackbox testing, whitebox, unit, integration, system, acceptance.
 blackbox testing ---> to analyze funtionality of software without knowing much about design or structure of software they are testing.
 whitebox testing ---> requires profound knowledge of code, as it includes testing of some structural part of the application.
@@ -101,15 +102,58 @@ what makes a good test engineer ?
 --> experience already in the field.
 __________________________________________________________________________________________________________________________________________________________________________________________
 
+***REGRESSION Testing:
+to ensure small change in one part of system doesnt break the functionality elsewhere in the system.
+when adding new payment type to shopping webiste, you have to rerun the old test to ensure that new code hasnt created any new defects/ reintroduced any old defects.
+
+test the software ---> add new feature ---> test whether new feature brought any old bug or created new bugs --> this test : "REGRESSION TESTING"
+
+
+diff between system testing and integration testing?
+
+SYSTEM TESING: test sftware as a whole to check if system is compilant with user requirements
+involves both functional and non functional testing.
+high level testing performed after integration testing.
+INTEGRATION TESTING: test interface between modules of software application, only functional testing performed, lowlevel testing after unit testing.
+
+DEFECT LIFE CYCLE: 
+process in which a defect go thru various phases during its lifetime. start whendefect found, ends when defect is closed, ensuring its not resurface.
+
+1.bug identified
+2. assigned to a developer
+3. bug status = active
+4. if dev feels bug not genuine --> bug status = rejected
+    if dev feels bug expected to be fixed in next releases --> bug status = deferred
+5. tester test after dev fixed the bug, if bug not found then status = verified, if exists status = reopen (again go back to active state)
+6. status = verified ----> bug closed.
+
+new ---> assign ----> active (-->rejected or deferred) ----> test (-->reopen --> active) ----> verified ---> closed
+
+algo: 
+new bug;
+assign to dev;
+status = active {
+    if(bug not genuine) rejected;
+    if(bug fix in next release) deferred;
+}
+dev fixed the bug and pushed to tester;
+tester testing the bug;
+if(test==bug) {
+  reopen() --> active;
+}
+else status = verified
+bug closed
 
 
 
+TEST HARNESS: 
+--> gather software and test info.
+--> this info was arrngd to test program unit by running it under changing conditions like stress, load, data-driven and monitoring its behaivor and outputs.
+--> Harness has two parts ---> test execution engine and test script repo.
 
+TEST CLOSURE:
+doc which gives summary of all tests conducted during SDLC --> gives detailed analysis of bugs removed and errors found.
 
-
-
-
-
-
+Positive and negative testing diff:
 
 
