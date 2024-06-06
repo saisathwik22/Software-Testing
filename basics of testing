@@ -1,0 +1,115 @@
+Software testing ---> to ensure quality of developed software ---> find bugs and fix them before the product is released to the user.
+Why testing? ----> provides quality assurance, removes errors at the initial stages, ensures lower maintainance cost and accuracy and consistency, BUG Free, multiple OS support.
+categories of software testing ---> MANUAL TESTING, AUTOMATION TESTING.
+quality control? ---> product-oriented approach to ensure successfull execution without defects and with requirements as per client.
+types of manual testing ---> Blackbox testing, whitebox, unit, integration, system, acceptance.
+blackbox testing ---> to analyze funtionality of software without knowing much about design or structure of software they are testing.
+whitebox testing ---> requires profound knowledge of code, as it includes testing of some structural part of the application.
+UNIT testing ---> testing smallest piece of code.
+INTEGRATION testing ---> testing interface between units .
+SYSTEM testing ----> to examine fully working of an integrated software system against user rqrmnt.
+ACCEPTANCE testing ---> formal testing based on user requirement and function processing, covers end-users real-world scenarios.
+acceptance ---> provides you result on basis of if product is fit to release to the market or not.
+
+ALPHA testing ---> to identify bugs before releasing product to real users, type of user acceptance testing. [black box white box]
+BETA testing ---> performed by real users of software in real env, type of user acceptance testing. (because not possible for testers to test for every possible edge case)
+BETA -> taking feedback from user himself.
+
+levels of manual testing ----> unit testing --> integration testing ----> system testing ----> acceptance testing.
+
+quality control ---> set of activities for ensuring quality in products ---> aims to identify defects in finished product ---> product oriented approch.
+qaulity assurance ----> set of activities for ensuring quality in process by which product are developed ---> aims to prevent defects with focus on process ---> process-oriented.
+
+TESTBED in manual testing
+---> test execution env configd for testing (software and hardware both).
+
+procedure for manual testing:
+1. understand requirements
+2. categorize requirement and write test cases
+3. conduct tests
+4.create Bug report after test result and submit to manager
+
+
+TEST CASE ---> doc contains set of conditions which are performed on software in order to verify expected functionality of the feature.
+
+API Testing ---> application programming interface
+testing apis directly and determine if they meet expectations for functionality, reliability, performance and security.
+lang independent, gui independent, improved test coverage, reduces testing cost, enables faster releases.
+
+Application has 3 categories:
+1. presentation layer ==> gui testing
+2. business layer ===> api testing
+3. database layer
+
+
+VERIFICATION: testing done without execution of code (examples, reviews, walkthroughs, demos)
+VALIDATION: testing with execution of code (non functional, functional testing)
+
+diff between bug and defect and error ?
+DEFECT: variance between expected and actual. Error found after application goes into production. refers to troubles with software products with external behavior or internalfeature.
+BUG: result of coding error, found in dev env before shipping to customer. (block functionality)
+ERROR: mistake misunderstanding misconception on part of SDE.
+
+Advantages of manual testing:
+--> live testing: testing under similar condition when an application goes live.
+--> less programming knowledge required
+--> UI UX issues
+--> Low cost investment, cost effective for short-term projects
+--> adaptability to adapt to changes made in application
+
+Disadvantages of manual testing:
+--> time consuming
+--> cant be reused --> for every change in application --> run all the test cases again and again.
+--> possibility of errors (human)
+
+is documentation really necessary in manual testing? ----
+***** YES ****
+--> to achieve effective software testing.
+--> contains each and every minute detail.
+--> document test cases ---> can estimate testing efforts -->  track and trace requirements.
+___________________________________________________________________________________________________________________________________________________________________________________________
+
+difference between manual testing and automation testing ?
+manual by human and human actions ---- auto by humans with help of tools, scripts.
+manual low accuracy, reliability ---- auto more reliable
+manual needs more time ---- auto needs low time.
+manual investment cost and roi both low ------ auto investment cost and roi both high.
+manual prefered when test cases run once/twice, suitable for exploratory, usability and adhoc testing ------- auto for regression testing, performance testing, load testing.
+manual allows human obs to find glitches, improves customer experience --------- auto no human obs involved, no guarantee of + customer experience.
+
+Use manual testing over automation testing when,
+--> short time projects
+--> when performing adhoc testing. (no fixed approach/planning )
+--> when performing exploratory testing
+--> when performing usability testing
+
+
+Phases in SOFTWARE TESTING LIFE CYLCE [STLC]
+1. reqmnt analysis
+2. test planning
+3. test case development
+4. test env setup
+5. test execution
+6. test cycle closure
+
+
+what makes a good test engineer ?
+--> test to break attitude --> strong desire for quality, keen attention to detail
+--> Tact and diplomacy roles needed to maintain cooperative relation with rest of devs 
+--> ability to communicate with both technicalppl and nontech ppl.
+--> ability to judge situations ---> make imp decisions ---> to test highrisk areas of an application when time is ltd.
+--> experience already in the field.
+__________________________________________________________________________________________________________________________________________________________________________________________
+
+
+
+
+
+
+
+
+
+
+
+
+
