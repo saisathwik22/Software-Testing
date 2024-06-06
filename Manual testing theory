@@ -12,6 +12,27 @@ SYSTEM testing ----> to examine fully working of an integrated software system a
 ACCEPTANCE testing ---> formal testing based on user requirement and function processing, covers end-users real-world scenarios.
 acceptance ---> provides you result on basis of if product is fit to release to the market or not.
 
+functional testing: whether application is providing all the functionalities as per reqmnts. focus on requiremnts, black box,{what does the product do} before non fucntional
+usecase: helps is checking login functionality
+non functonal testing: checks attributes of system or an application such as memory mgmt, performance, health of system. focus on user expectatiibs, white box {how does product do}
+use case:to load dashboard in few seconds.
+
+types of functional testing:
+unit, sanity, smoke, regression, integration, usability
+
+types of non functional testing:
+documentation testing: helps in estimate testing effort rqd, test coverage.
+Installation testing: testing whether working or not after installation.
+performance testing: heart of testing, system performs well under any work load
+    diff types of performance testing:
+    -->load testing: measure response time and staying power of any application when system performing well under heavy load.
+    -->stree testing: validate applications behavior when pushed beyond peak load conditions.
+    -->endurance testing: tested with expected amount of load over a long period of time to find behavior of system.
+    -->spike testing: to validate performance characteristics when the system under test is subjected to work load models and load volumes so
+Reliability testing:whether software can perform a failure free operation for a specific period of time.
+Security testing: ensures protection of its data and resources 
+
+
 ALPHA testing ---> to identify bugs before releasing product to real users, type of user acceptance testing. [black box white box]
 BETA testing ---> performed by real users of software in real env, type of user acceptance testing. (because not possible for testers to test for every possible edge case)
 BETA -> taking feedback from user himself.
@@ -155,5 +176,136 @@ TEST CLOSURE:
 doc which gives summary of all tests conducted during SDLC --> gives detailed analysis of bugs removed and errors found.
 
 Positive and negative testing diff:
+POSITIVE testing: determines that your application works as expected. if error found test fails. tester always check for valid set of values only.
+NEGATIVE testing: determines whether your application can handle invalid input or unexpected user behavior
+
+CRITICAL BUG: tendancy to affect majority functionality of given application.
+
+PESTICIDE PARADOX:
+if same tests repeated again and again, eventually these test cases will no longer find new bugs.
+how to overcome: write whole new set of test cases, prepate new test cases and add them to existing test cases.
 
 
+DEFECT CASCADING:
+process of triggering other defects in application
+--> when defect goes unnoticed while testing, it invokes other defects, leading to incorrect ouput.
+--> multiple defects crop up in later stages of development.
+
+QUALITY SOFTWARE: 
+bug-free, delivered on time, within budget, meets requirments, maintainable.
+quailty is subjective, each client will have their own slant for quality
+
+BLACK BOX TESTING and types?
+spec-based testing, analyses functionality of software without knowing much about the internal structure of item.
+blackbox TECHNIQUES:
+-->Equivalence Partitioning
+-->Boundary value analysis
+-->Decision table based technique
+-->cause-effect graphing
+-->use case testing
+
+WHITE BOX TESTING and types?
+structure based testing, have knwoledge about internl structural part of application
+whitebox TECHNIQUES:
+-->Statement Coverage
+-->Decision Coverage
+-->Condition Coverage
+-->Multiple Condition Coverage
+
+what are experience based testing?
+discovery, investigation, learning. constant study and analysis of product required. apply your skills and experience to dev test strategy and test cases to perform necessary testing.
+techniques:
+--> Exploratory 
+--> Error guessing
+__________________________________________________________________________________________________________________________________________________________________________________________
+
+TOP DOWN Approach:
+testing from top to bottom
+high level modules tested first and then low level modules.
+BOTTOM UP Approach:
+base levels to high-up levels.
+first low level modules are tested first and afterward high-level state models.
+
+
+diff between smoke testing and sanity testing:
+
+SMOKE TESTING: test executed on initial builds of product
+motive --> to measure stability of initial builds
+---->involves documentation and scripting work
+test coverage --> shallow and wide approach
+performed by? --> developers or testers
+
+SANITY TESTING: tests done on builds that have passed smokeand regression tests
+motive --> to evaluate rationality and originality of functionalities of builds
+----> doesnt emphasize on any sort of documentation
+test coverage -->  narrow and deep approach
+executed by testers.
+
+
+diff between static testing and dynamic testing:
+
+STATIC TESTING:
+--> white box technique
+--> performed at early stages of SDLC to identify imperfections.
+--> implemented at verification stage
+--> before code deployment
+--> code error detection and execution of program not really a concern
+
+DYNAMIC TESTING:
+--> execution of code and done at later stages of SDLC
+--> validates and approves output with expected results
+--> starts during validation stage.
+--> performed after code deployment
+--> execution of code necessary
+__________________________________________________________________________________________________________________________________________________________________________________________
+Scenario based questions:
+
+deciding when to stop testing is difficult, common factors to decide are:
+--> considering deadlines
+--> testcases completed with certain pass %
+--> when budget exhausted
+--> coverage of code has reached specific point
+--> when bug rate falls below a certain level
+--> when beta or alpha testing period ends.
+
+
+What if software is so buggy, it cant really be tested?
+in such situation
+--> report to higher authority, with documentation proof and inform.
+
+how do you know code has met specifications?
+code is good if its bugfree and readable and maintainable
+--> tools like traceability matrix to which ensures the requirements are mapped to test cases.
+--> when execution of all TC's finishes with a success,  it indicates that code has met the requiement.
+
+When you will choose automatic testing over manual testing:
+when there are repetitive changes
+execution to be done in standard env
+when there is less time to complete testing
+lot of code that is to be tested multiple times
+when reports are required for execution.
+
+
+SOFTWARE CONFIGURATION MANAGEMENT (scm)
+set of processes policies and tools that organise control cooridnate and track:
+code, doc, problems, change request, designs and tools, compilers and libraries.
+
+
+can we do system testing at any stage?
+NO , must start only if all units are in place and working properly. usually happens before UAT( user acceptance testing)
+
+BEST practices to follow when writing test cases:
+
+--> prioritize test cases based on project timelines and risk
+--> remember 80/20 rule --> 20% of your test should cover 80% of your application.
+--> dont try test cases in one attempt
+--> make sure test cases are modular
+--> keep them simple
+--> always kepp end users requiremnet in mind
+--> actively use test mgmt tool
+--> monitor test cases regularly.
+
+automation testing cant replace manual testing****
+
+SDLC -- >
+requirement --> analysis --> design ---> coding --> testing --> deployment--> .....
